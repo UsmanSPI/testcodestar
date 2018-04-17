@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 function ServiceHandler() {
     $data = new stdClass();
-    $data->Output = "Hello World!";
+    $data->Output = "Hello World Added!";
 
     return json_encode($data);
 };
@@ -15,3 +15,4 @@ $app->get('/', 'ServiceHandler');
 $app->post('/', 'ServiceHandler');
 
 $app->run();
+
